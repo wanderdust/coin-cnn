@@ -19,7 +19,7 @@ List of currencies (30):
 * Korean Won
 * Malaysian Ringgit
 * Mexican peso
-* New Zaeland dollar
+* New Zealand dollar
 * Norwegian Krone
 * Pakistan Rupee
 * Philipine peso

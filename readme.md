@@ -29,3 +29,5 @@ This json will map each category number to a coin name. It cointains an id for e
 ## Creating a web scrapper to gather our data.
 
 Our web scrapper will extract images from a website. To acomplish this I have created a Coin class to store all the relevant data for each coin instance, such as the url to scrap for a specific coin, the name and the images urls we want to download. Later on all the images found will be saved in the appropiate folder, labeled accordingly with their id.
+
+One of the websites being used to collect our images is ucoin.com. To gather this data our scrapper first looks at a currency list. From here it finds the coin we want and through a found url we go to a gallery where we can find several pictures of the target coin. All this urls get saved in our coin instance ready for download. 

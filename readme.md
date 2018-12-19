@@ -1,4 +1,4 @@
-## A CNN to identify the most common types of coins.
+# A CNN to identify the most common types of coins.
 
 ### List of currencies:
 | Supported Currency Coins |  | |
@@ -22,6 +22,9 @@ The first problem that raises is weather to classify each coin side as a differe
 
 We'll observe how the model performs and make any changes if necessary.
 
+# Getting the data
+The first step to start creating our classifier is to get enough images of coins for each currency.
+
 ## Mapper: cat_to_name.json.
 
 This json will map each category number to a coin name. It cointains an id for each coin category.
@@ -30,4 +33,4 @@ This json will map each category number to a coin name. It cointains an id for e
 
 Our web scrapper will extract images from a website. To acomplish this I have created a Coin class to store all the relevant data for each coin instance, such as the url to scrap for a specific coin, the name and the images urls we want to download. Later on all the images found will be saved in the appropiate folder, labeled accordingly with their id.
 
-One of the websites being used to collect our images is ucoin.com. To gather this data our scrapper first looks at a currency list. From here it finds the coin we want and through a found url we go to a gallery where we can find several pictures of the target coin. All this urls get saved in our coin instance ready for download. 
+One of the websites being used to collect our images is [ucoin](https://en.ucoin.net/). To gather this data our scrapper first looks at a currency list. From here it finds the specific coin we want and through a found url we go to a gallery where we can find several pictures of the target coin. All this urls get saved in our coin instance ready for download. Later we iterate through every coin and download each image to a folder.

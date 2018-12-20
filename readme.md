@@ -41,4 +41,8 @@ The other website I'll be getting data from is [Bing search api](https://api.cog
 
 ### Creating a shell script
 
-The shell script add_jpg_extension.sh simply adds the .jpg extension to all the images for every folder. The reason to create this script is that I forgot to add the extension when saving the images downloaded from the bing images api. :expressionless:
+The shell script add_jpg_extension.sh simply adds the .jpg extension to all the images for every folder. The reason for creating this script is that I forgot to add the extension when saving the images downloaded from the bing images api. :expressionless:
+
+### The data
+
+The images are now ready to be processed and fed into a deep learning model. The only thing left is to separate our data into 3 folders for train, validation and test. Data available here: [Add link here (NOT_UPLOADED_YET)](https://github.com/wanderdust/coin-cnn)

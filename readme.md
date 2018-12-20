@@ -35,6 +35,10 @@ Our web scrapper will extract images from a website. To acomplish this I have cr
 
 One of the websites being used to collect our images is [ucoin](https://en.ucoin.net/). To gather this data the scrapper first looks at a currency list. From here it finds the specific coin we want and through a url we go to a gallery where we can find several pictures of the target coin. All the image urls get saved in our coin instance ready for download. Later we iterate through every coin and download all its images to a folder. 
 
-One of the problems with scrapping is getting blocked for making too many requests. One counter measure to try and avoid this from happening is to slow down the web crawler.
+One of the problems with scrapping is getting blocked for making too many requests. One counter measure to try and avoid this from happening is to slow down the web crawler. I've done this by adding a 1 second delay to the for loop that makes the requests for each coin.
 
 The other website I'll be getting data from is [Bing search api](https://api.cognitive.microsoft.com/bing/v7.0/images/search), for the sake of diversity. The code for this scrapper is relatively easy, as all it takes is a call the api which returns the image urls ready to download.
+
+### Creating a shell script
+
+The shell script add_jpg_extension.sh simply adds the .jpg extension to all the images for every folder. The reason to create this script is that I forgot to add the extension when saving the images downloaded from the bing images api. :expressionless:

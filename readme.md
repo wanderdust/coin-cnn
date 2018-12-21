@@ -20,10 +20,10 @@
 
 The first problem that raises is weather to classify each coin side as a different class or as the same coin. As both sides of the coin will belong to the same coin, it makes sense for both the observe and reverse of the coin to be fed to the network as one category.
 
-We'll observe how the model performs and make any changes if necessary.
+I'll observe how the model performs and make any changes if necessary.
 
 # Getting the data
-The first step to start creating our classifier is to get enough images of coins for each currency. We'll use a web scrapper. I'll need to create three directories: train, validation, test.
+The first step to start creating our classifier is to get enough images of coins for each currency. I'll use a web scrapper and I'll create three directories: train, validation, test.
 
 ### Mapper: cat_to_name.json.
 
@@ -31,7 +31,7 @@ The [cat_to_name.json](https://github.com/wanderdust/coin-cnn/blob/master/cat_to
 
 ### Creating a web scrapper to gather our data.
 
-Our web scrapper will extract images from a website. To acomplish this I have created a Coin class to store all the relevant data for each coin instance, such as the url to scrap for a specific coin, the name and the images urls we want to download. Later on all the images found will be saved in the appropiate folder, labeled accordingly with their id.
+The web scrapper will extract images from a website. To acomplish this I have created a Coin class to store all the relevant data for each coin instance, such as the url to scrap for a specific coin, the name and the images urls we want to download. Later on all the images found will be saved in the appropiate folder, labeled accordingly with their id.
 
 One of the websites being used to collect our images is [ucoin](https://en.ucoin.net/). To gather this data the scrapper first looks at a currency list. From here it finds the specific coin we want and through a url we go to a gallery where we can find several pictures of the target coin. All the image urls get saved in our coin instance ready for download. Later we iterate through every coin and download all its images to a folder. 
 
@@ -45,4 +45,14 @@ The shell script add_jpg_extension.sh simply adds the .jpg extension to all the 
 
 ### The data
 
-The images are now ready to be processed and fed into a deep learning model. The only thing left is to separate our data into 3 folders for train, validation and test. Data available here: [Add link here (NOT_UPLOADED_YET)](https://github.com/wanderdust/coin-cnn)
+The images are now ready to be processed. The only thing left is to separate our data into 3 folders for train, validation and test. Data available here: [Add link here (NOT_UPLOADED_YET)](https://github.com/wanderdust/coin-cnn)
+
+# Process the data
+
+### Explore and visualize the data
+
+### Split the data
+
+# Create the Convolutional Neural Network
+
+

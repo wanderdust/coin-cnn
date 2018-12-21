@@ -43,13 +43,10 @@ The other website I'll be getting data from is [Bing search api](https://api.cog
 
 The shell script add_jpg_extension.sh simply adds the .jpg extension to all the images for every folder. The reason for creating this script is that I forgot to add the extension when saving the images downloaded from the bing images api. :expressionless:
 
-### The data
-
-The images are now ready to be processed. The only thing left is to separate our data into 3 folders for train, validation and test. Data available here: [Add link here (NOT_UPLOADED_YET)](https://github.com/wanderdust/coin-cnn)
-
-# Process the data
 
 ### Explore and visualize the data
+
+Before splitting and processing our data images, I'll do some visualization in [data_visualize](https://github.com/wanderdust/coin-cnn/blob/master/data_visualize.ipynb). We want to explore things like the amount of data we have or the average image sizes we've got from our web scrapper.
 
 ### Split the data
 

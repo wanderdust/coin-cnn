@@ -39,6 +39,8 @@ One of the problems with scrapping is getting blocked for making too many reques
 
 The other website I'll be getting data from is [Bing search api](https://api.cognitive.microsoft.com/bing/v7.0/images/search), for the sake of diversity. The code for this scrapper is relatively easy, as all it takes is a call the api which returns the image urls ready to download.
 
+One concerning issue is the possible duplicity of some of the images. Also, most images are already cropped to fit the coin nicely. This can cause a problem when training the network, because if all the images we feed it are "too perfect" it won't be able to generalize too well.
+
 ### Creating a shell script
 
 The shell script add_jpg_extension.sh simply adds the .jpg extension to all the images for every folder. The reason for creating this script is that I forgot to add the extension when saving the images downloaded from the bing images api. :expressionless:
@@ -46,10 +48,21 @@ The shell script add_jpg_extension.sh simply adds the .jpg extension to all the 
 
 ### Explore and visualize the data
 
-Before splitting and processing our data images, I'll do some visualization in [data_visualize](https://github.com/wanderdust/coin-cnn/blob/master/data_visualize.ipynb). We want to explore things like the amount of data we have or the average image sizes we've got from our web scrapper.
+Before splitting and processing our data images, I'll do some visualization in [data_visualize](https://github.com/wanderdust/coin-cnn/blob/master/data_visualize.ipynb). We want to explore things like the amount of data we have or the average image sizes.
 
 ### Split the data
 
+The final step before jumping into building our network is separate the data in three different dirs: train, test and validation. I've done this in [data_sampler.ipynb](https://github.com/wanderdust/coin-cnn/blob/master/data_sampler.ipynb), where I keep 80% of the data for training, 10% for validation and the remaining 10% for testing.
+
 # Create the Convolutional Neural Network
 
+### Preprocessing the images and batching
+
+### Building the network
+
+### Training the network
+
+### Testing the network
+
+# Conclusions
 

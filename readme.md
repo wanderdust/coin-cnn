@@ -52,7 +52,11 @@ Before splitting and processing our data images, I'll do some visualization in [
 
 ### Split the data
 
-The final step before jumping into building our network is separate the data in three different dirs: train, test and validation. I've done this in [data_sampler.ipynb](https://github.com/wanderdust/coin-cnn/blob/master/data_sampler.ipynb), where I keep 80% of the data for training, 10% for validation and the remaining 10% for testing.
+The final step before jumping into building our network is to separate the data into three different directories: train, test and validation. I've done this in [data_sampler.ipynb](https://github.com/wanderdust/coin-cnn/blob/master/data_sampler.ipynb), where I keep 80% of the data for training, 10% for validation and the remaining 10% for testing.
+
+### Add transformations to the images
+
+The main problem I can think about the dataset now is how pretty the images have been cropped to fit the image. This will be a problem for the model to generalise because it won't do too well when we feed it images of coins with other things in the background. One way I can think to fix this is to randomnly apply some transformations to some of the images, not only random rotations and random croppings but also stacking a few images on top of each other creating a new image. This way we can feed the network images of several coins (of the same value) at the same time, helping it to generalize a bit more.
 
 # Create the Convolutional Neural Network
 

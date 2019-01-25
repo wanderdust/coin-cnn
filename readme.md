@@ -62,7 +62,11 @@ The main problem I can think about the dataset now is how pretty the images have
 
 ### Preprocessing the images and batching
 
+I'll add some random transformations to the data like rotations. This will prevent the model from overfiitng since the data shown will always be different even though the images are the same.
+
 ### Building the network
+
+The network I'll use is a pre trained Resnet152. I'll change the fully connected layer for my own to fit my needs.
 
 ### Training the network
 

@@ -66,11 +66,5 @@ I'll add some random transformations to the data like rotations. This will preve
 
 ### Building the network
 
-The network I'll use is a pre trained Resnet152. I'll change the fully connected layer for my own to fit my needs.
-
-### Training the network
-
-### Testing the network
-
-# Conclusions
+The network I'll use is a pre trained Resnet152. I'll change the fully connected layer for my own to fit my needs. I will use a relu activation function, and an adam optimizer. 
 

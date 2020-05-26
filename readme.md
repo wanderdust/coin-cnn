@@ -1,5 +1,13 @@
 # A CNN to identify the most common types of coins.
 
+Check out the app I built using this dataset: [Coin Recognition App](http://54.174.164.119/)
+
+or
+
+Run the app in your pc: [Coin Recognition App's Code](https://github.com/wanderdust/coin-cnn-webapp)
+
+___________________
+
 For up to date implementations:
 
 * Using MobilenetV2 with keras: [MobileNetV2](https://www.kaggle.com/wanderdust/coin-prediction-using-keras-cnn-mobilenet)

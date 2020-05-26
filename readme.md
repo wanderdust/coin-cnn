@@ -1,5 +1,11 @@
 # A CNN to identify the most common types of coins.
 
+For up to date implementations:
+
+* Using MobilenetV2 with keras: [MobileNetV2](https://www.kaggle.com/wanderdust/coin-prediction-using-keras-cnn-mobilenet)
+* Using ResNet50 with keras: [ResNet50](https://www.kaggle.com/wanderdust/coin-prediction-using-keras-cnn)
+* Using ResNet50 with pytorch: [ResnNet50](https://www.kaggle.com/wanderdust/coin-classifier)
+
 ### List of currencies:
 | Supported Currency Coins |  | |
 | --- | --- | --- |
